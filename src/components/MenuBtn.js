@@ -39,6 +39,19 @@ export default function MenuBtn({ btnLogo, setBtnLogo }) {
     setBtnLogo(btnLogo === menuText ? closeText : menuText);
   }
 
+  function closeMenu(e) {
+    document
+      .querySelectorAll(`.${menuItemsClass}`)
+      .forEach(
+        (link) =>
+          (link.className = `${menuItemsClass} ${
+            link.className.includes(activeClass) ? "" : activeClass
+          }`)
+      );
+
+    setBtnLogo(btnLogo === menuText ? closeText : menuText);
+  }
+
   return (
     <>
       <nav>
@@ -47,37 +60,58 @@ export default function MenuBtn({ btnLogo, setBtnLogo }) {
         </button>
         <ul className={menuItemsClass}>
           <li className={menuItemClass}>
-            <a className={menuLinkClass} href={`#${aboutIdText}`}>
+            <a
+              className={menuLinkClass}
+              href={`#${aboutIdText}`}
+              onClick={closeMenu}>
               {aboutLinkText}
             </a>
           </li>
           <li className={menuItemClass}>
-            <a className={menuLinkClass} href={`#${servicesIdText}`}>
+            <a
+              className={menuLinkClass}
+              href={`#${servicesIdText}`}
+              onClick={closeMenu}>
               {servicesLinkText}
             </a>
           </li>
           <li className={menuItemClass}>
-            <a className={menuLinkClass} href={`#${portfolioIdText}`}>
+            <a
+              className={menuLinkClass}
+              href={`#${portfolioIdText}`}
+              onClick={closeMenu}>
               {portfolioLinkText}
             </a>
           </li>
           <li className={menuItemClass}>
-            <a className={menuLinkClass} href={`#${clientsIdText}`}>
+            <a
+              className={menuLinkClass}
+              href={`#${clientsIdText}`}
+              onClick={closeMenu}>
               {clientsLinkText}
             </a>
           </li>
           <li className={menuItemClass}>
-            <a className={menuLinkClass} href={`#${blogIdText}`}>
+            <a
+              className={menuLinkClass}
+              href={`#${blogIdText}`}
+              onClick={closeMenu}>
               {blogLinkText}
             </a>
           </li>
           <li className={menuItemClass}>
-            <a className={menuLinkClass} href={`#${testimonialsIdText}`}>
+            <a
+              className={menuLinkClass}
+              href={`#${testimonialsIdText}`}
+              onClick={closeMenu}>
               {testimonialsLinkText}
             </a>
           </li>
           <li className={menuItemClass}>
-            <a className={menuLinkClass} href={`#${contactIdText}`}>
+            <a
+              className={menuLinkClass}
+              href={`#${contactIdText}`}
+              onClick={closeMenu}>
               {contactLinkText}
             </a>
           </li>
