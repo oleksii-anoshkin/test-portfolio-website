@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@400;500;700&family=Roboto:wght@400;500&display=swap');
+
+:root {
+  /* fonts */
+  --primary-font: 'Red Hat Display', sans-serif;
+  --secondary-font: 'Roboto', sans-serif;
+
+  /* general colors */
+  --primary-white: #FFFFFF;
+  --secondary-white: #DAD2E3;
+  --primary-dark: #000000;
+  --secondary-dark: #25202F;
+  --thirdly-dark: #21232D;
+  --primary-gray: #47444E;
+  --secondary-gray: #7E7F86;
+  --thirdly-gray: #666666;
+  --fourthly-gray: #636066;
+  --fifthly-gray: #A8A0B0;
+  --sixthly-gray: #637085;
+  --primary-purple: #8643DC;
+  --secondary-purple: #c97df7;
+
+  /* fonts color */
+  --primary-font-color: var(--secondary-dark);
+
+  /* nav */
+  --nav-link: var(--secondary-gray);
+  --nav-link-current: var(--secondary-dark);
+  --menu-line: var(--secondary-dark);
+  --menu-line-hover: var(--primary-purple);
+  --menu-line-active: var(--secondary-purple);
+  --logo-focus: var(--secondary-dark);
+
+  /* hero */
+  --hero-hello: var(--thirdly-gray);
+  --hero-title: var(--secondary-dark);
+
+  /* btn */
+  --btn-text: var(--primary-white);
+  --btn-text-current: var(--secondary-purple);
+  --btn-bg: var(--primary-purple);
+  --btn-bg-hover: var(--secondary-purple);
+  --btn-bg-current: var(--primary-white);
+  --btn-border: var(--primary-purple);
+  --btn-border-hover: var(--secondary-purple);
+
+  /* sections */
+  --section-header: var(--primary-purple);
+  --section-title: var(--secondary-dark);
+  --section-item-title: var(--secondary-dark);
+  --section-item-text: var(--primary-gray);
+  --section-link-text: var(--secondary-dark);
+  --section-card-text: var(--primary-dark);
+  --secondary-section-card-text: var(--primary-white);
+
+  /* form */
+  --form-header: var(--primary-purple);
+  --form-email: var(--primary-purple);
+  --form-title: var(--thirdly-dark);
+  --form-label: var(--fifthly-gray);
+  --form-line: var(--secondary-white);
+  --form-clip: var(--sixthly-gray);
+
+  /* bgs */
+  --wrap-bg: var(--primary-white);
+  --menu-bg: var(--primary-white);
+
+  /* footer */
+  --foter-title-text: var(--thirdly-dark);
+
+  /* clients cards */
+  --border-slack: #FFE7F0;
+  --border-medium: #CAFFE1;
+  --border-microsoft: #DDF5FF;
+  --border-zeplin: #FFEEC9;
+  --border-shopify: #DBFFC4;
+  --bg-slack: #FFF7FA;
+  --bg-medium: #EDFFF5;
+  --bg-microsoft: #F5FCFF;
+  --bg-zeplin: #FFFBF2;
+  --bg-shopify: #F4FFED;
+}
+
+/* general styles */
+html {
+  scroll-behavior: smooth;
+}
+
+.wrap {
+  position: relative;
+
+  padding: 0 11.389%;
+
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  font-family: var(--primary-font);
+  color: var(--primary-font-color);
+
+  background: var(--wrap-bg) url(./images/wrap-bg.webp) right top / 69.5% auto no-repeat;
+}
+
+@media (max-width: 1280px) {
+  .wrap {
+    background-size: 65%;
+  }
+}
+
+@media (max-width: 1024px) {
+  .wrap {
+    background-position: right 36px;
+  }
+}
+
+@media (max-width: 768px) {
+  .wrap {
+    background: var(--wrap-bg) url(./images/wrap-bg-sm.webp) center -28px / 90% auto no-repeat;
+  }
+}
+
+@media (max-width: 640px) {
+  .wrap {
+    background-size: 100% auto;
+    background-position: center top;
+  }
+}

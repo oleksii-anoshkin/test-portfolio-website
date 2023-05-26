@@ -1,0 +1,160 @@
+.hero {
+  padding-top: 9.713%;
+  padding-bottom: 19.605%;
+}
+
+.hero__beforetitle,
+.hero__subtitle {
+  display: block;
+}
+
+.hero__title {
+  margin-bottom: 4.497%;
+
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 1.2;
+
+  cursor: default;
+}
+
+.hero__beforetitle {
+  font-weight: 400;
+  font-size: 24px;
+  color: var(--hero-hello);
+}
+
+.hero__subtitle {
+  padding-top: 1.799%;
+
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 1.323;
+}
+
+.hero__btn {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  width: 200px;
+  height: 60px;
+
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.323;
+  color: var(--btn-text);
+  text-decoration: none;
+
+  background-color: var(--btn-bg);
+  border: 2px solid var(--btn-border);
+  border-radius: 100px;
+
+  transition: all 0.1s linear 0s;
+}
+
+.hero__btn:hover,
+.hero__btn:focus {
+  color: var(--btn-text);
+  background-color: var(--btn-bg-hover);
+  border-color: var(--btn-border-hover);
+}
+
+.hero__btn:active {
+  color: var(--btn-text-current);
+  background-color: var(--btn-bg-current);
+  border-color: var(--btn-border-hover);
+}
+
+@media (max-width: 1280px) and (min-width: 1025px) {
+  .hero {
+    padding-bottom: 14%;
+  }
+
+  .hero__title {
+    font-size: 52px;
+  }
+
+  .hero__beforetitle,
+  .hero__subtitle {
+    font-size: 22px;
+  }
+
+  .hero__btn {
+    width: 180px;
+    height: 56px;
+
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .hero {
+    padding-bottom: 12%;
+  }
+
+  .hero__title {
+    font-size: 48px;
+  }
+
+  .hero__beforetitle,
+  .hero__subtitle {
+    font-size: 20px;
+  }
+
+  .hero__btn {
+    width: 160px;
+    height: 48px;
+
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: space-between;
+
+    padding-top: 64%;
+    padding-bottom: 4%;
+  }
+
+  .header {
+    padding-top: 32px;
+  }
+
+  .nav__items {
+    display: none;
+  }
+
+  .hero__title {
+    margin-bottom: 0;
+
+  }
+}
+
+@media (max-width: 640px) {
+  .hero {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+
+    padding-top: 80%;
+
+    text-align: center;
+  }
+
+  .hero__title {
+    margin-bottom: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero {
+    padding-top: 72%;
+  }
+}

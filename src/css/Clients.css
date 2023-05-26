@@ -1,0 +1,230 @@
+.clients {
+  padding: 8.993% 0 6.835%;
+
+  cursor: default;
+}
+
+.clients__title {
+  margin-bottom: 1.799%;
+
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 48px;
+  line-height: 1.333;
+}
+
+.clients__beforetitle {
+  display: block;
+
+  font-weight: 400;
+  font-size: 18px;
+  color: var(--section-header);
+}
+
+.clients__beforetitle::after {
+  content: "";
+  margin: 10px 0 15px;
+  display: block;
+
+  height: 2px;
+  width: 50px;
+
+  background-color: var(--section-header)
+}
+
+.clients__subtitle {
+  display: block;
+}
+
+.clients__items {
+  display: flex;
+  flex-flow: row nowrap;
+
+  margin: 0;
+  padding: 0;
+
+  width: 100%;
+}
+
+.clients__item {
+  position: relative;
+  flex: 1 1 15.288%;
+  margin: 2.159%;
+}
+
+.clients__item-bg {
+  position: absolute;
+  bottom: 0;
+  left: 13.53%;
+
+  width: 73%;
+  height: 73%;
+
+  z-index: 10;
+}
+
+.clients__item-bg.slack {
+  background: #ffd7e9;
+  filter: blur(50px);
+}
+
+.clients__item-bg.medium {
+  background: #BCFFDB;
+  filter: blur(50px);
+}
+
+.clients__item-bg.microsoft {
+  background: #CEF2FF;
+  filter: blur(50px);
+}
+
+.clients__item-bg.zeplin {
+  background: #FFE9BC;
+  filter: blur(50px);
+}
+
+.clients__item-bg.shopify {
+  background: #D2FFB5;
+  filter: blur(50px);
+}
+
+.clients__item-content {
+  position: relative;
+
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+
+  padding: 18.824%;
+
+  border: 1px solid;
+  border-radius: 10px;
+
+  z-index: 50;
+
+  transition: all 0.1s linear 0s;
+}
+
+.clients__item-content.slack {
+  border-color: var(--border-slack);
+  background-color: var(--bg-slack);
+}
+
+.clients__item-content.slack:hover,
+.clients__item-content.slack:focus {
+  background-color: var(--border-slack);
+}
+
+.clients__item-content.medium {
+  border-color: var(--border-medium);
+  background-color: var(--bg-medium);
+}
+
+.clients__item-content.medium:hover,
+.clients__item-content.medium:focus {
+  background-color: var(--border-medium);
+}
+
+.clients__item-content.microsoft {
+  border-color: var(--border-microsoft);
+  background-color: var(--bg-microsoft);
+}
+
+.clients__item-content.microsoft:hover,
+.clients__item-content.microsoft:focus {
+  background-color: var(--border-microsoft);
+}
+
+.clients__item-content.zeplin {
+  border-color: var(--border-zeplin);
+  background-color: var(--bg-zeplin);
+}
+
+.clients__item-content.zeplin:focus,
+.clients__item-content.zeplin:hover {
+  background-color: var(--border-zeplin);
+}
+
+.clients__item-content.shopify {
+  border-color: var(--border-shopify);
+  background-color: var(--bg-shopify);
+}
+
+.clients__item-content.shopify:hover,
+.clients__item-content.shopify:focus {
+  background-color: var(--border-shopify);
+}
+
+.clients__item-title {
+  margin-bottom: 2.942%;
+
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.333;
+  color: var(--section-card-text);
+
+  z-index: 50;
+}
+
+.clients__item-box {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-items: center;
+  align-items: center;
+
+  margin-top: 2.942%;
+  margin-bottom: 17.25%;
+
+  width: 50px;
+  height: 50px;
+
+  z-index: 50;
+}
+
+.clients__item-img {
+  width: auto;
+  height: 100%;
+
+  z-index: 50;
+}
+
+@media (max-width: 1024px) {
+  .clients__title {
+    font-size: 32px;
+  }
+
+  .clients__beforetitle {
+    font-size: 16px;
+  }
+
+  .clients__item-title {
+    font-size: 19px;
+  }
+
+  .clients__item-text {
+    font-size: 15px;
+  }
+
+  .clients__item-box {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  .clients__items {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+  }
+
+  .clients__item {
+    min-width: 140px;
+    max-width: 140px;
+  }
+
+  .clients__item-content {
+    padding: 30px;
+  }
+}
